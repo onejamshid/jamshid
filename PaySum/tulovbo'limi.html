@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To'lov bo'limi</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+
+    <div class=" col-12  flex-row justify-content-center">
+        <div id="profile" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-75" src="imgs/profil.webp" alt="">
+            </div>
+            <h6 class="mr mt-1">Profile</h6>
+        </div>
+        <div id="tulovbulimi" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="imgs/kashelok1.webp" alt="">
+            </div>
+            <h6 class="mr mt-1">To'lovlar</h6>
+        </div>
+        <div id="cashback" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="imgs/money.webp" alt="">
+            </div>
+            <h6 class="mr mt-1">Cashback</h6>
+        </div>
+        <div id="kartalar" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="imgs/plastik2.webp" alt="">
+            </div>
+            <h6 class=" mr mt-1">Kartalar</h6>
+        </div>
+        <div id="tarix" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="imgs/fon2.webp" alt="">
+            </div>
+            <h6 class=" mr mt-1">Tarix</h6>
+        </div>
+        <div id="money" class="col-6 offset-2 wan">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="image/money.png" alt="">
+            </div>
+            <p class=" mr mt-1">Convert</p>
+        </div>
+        <div id="chiqish" class="col-6 offset-2 wan  ">
+
+            <div class="row justify-content-center">
+                <img class="abs w-50" src="imgs/exit.webp" alt="">
+            </div>
+            <h6 class=" mr mt-1">Chiqish</h6>
+        </div>
+
+    </div>
+</header>
+
+<div class="container">
+
+
+    <div class="col-10 offset-2">
+        <h1 class="text-center text-secondary m">To'lov bo'limi</h1>
+        <div class="col-10 offset-1">
+            <form id="form" action="">
+                <div class="inputBox">
+                    <span >Qabul qiluvchi carta</span>
+                    <input id="cardraqam2" type="text" maxlength="16" class="card-number-input inp">
+                </div>
+                <div class="inputBox">
+                    <span>Qabul qiluvchi F.I.SH</span>
+                    <input id="ismfamilya2" type="text" class="card-holder-input inp">
+                </div>
+                <div class="inputBox">
+                    <span>summa</span>
+                    <input placeholder="Summani kriting $" id="oy2" type="text"  class="card-holder-input inp">
+                </div>
+                <div class="flexbox">
+
+                    <div class="inputBox">
+                        <span ></span>
+                        <select name="" id="yil2" class="year-input inp">
+                            <option id="bosh3" value="Kartani tanlang" selected disabled>Kartani tanlang</option>
+                            <option value="PayPal">PayPal</option>
+                            <option value="HUMO">HUMO</option>
+                            <option value="Uzcard">Uzcard</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Mastercard</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <input onclick="bos()" id="teksubmit2" type="submit" value="submit" class="submit-btn">
+            </form>
+        </div>
+        <br><br>
+        <div class="col-12">
+            <h2 class="text-secondary text-center">Manitoring</h2>
+            <p class="cashs">Har bir qilingan tulov uchun 10% cashback beriladi. Cashbackni tekshirish uchun <br>
+                Cashback bo'limiga o'ting</p>
+            <table class="table table-striped mt-5 text-center">
+                <thead>
+                <tr>
+                    <th>Qabul qiluvchi karta</th>
+                    <th>Ism Familiyasi</th>
+                    <th>Summa</th>
+                    <th>tanlov</th>
+                </tr>
+                </thead>
+                <tbody id="book-list2"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="script.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+</body>
+</html>
